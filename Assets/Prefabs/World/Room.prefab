@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6010705604187302969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6010705604187302968}
+  - component: {fileID: 6010705604187302967}
+  - component: {fileID: 6702254219837709767}
+  m_Layer: 0
+  m_Name: Room
+  m_TagString: Room
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6010705604187302968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010705604187302969}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6010705604187302967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010705604187302969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f178e9a0302e24438bb3b27b293ea60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallTile: {fileID: 115354028030617941, guid: 7fba21cab365d0842881d6ec9e582c31, type: 3}
+  floorTile: {fileID: 5127024490022477531, guid: d9a79db2eb335004f9ff08b5639999b4,
+    type: 3}
+  possibleEnemies:
+  - {fileID: 8465254556959413600, guid: db59bb3f782f35247914ebec9b034811, type: 3}
+  - {fileID: 1867943380682656081, guid: 6f2164065c1ae7642845635d5d19def6, type: 3}
+  - {fileID: 7510463657322620779, guid: 0413d13aaef8b514595b0dfd6abf1245, type: 3}
+  bossPrefab: {fileID: 7248412469196862531, guid: b48649dba2059f74fbde72337950b84b,
+    type: 3}
+  healthPrefab: {fileID: 6111785537811780205, guid: c4ef31ade66ac6e4992d278d8ed4b73e,
+    type: 3}
+  treasurePrefab: {fileID: 2962915502783917588, guid: 3428f3b6951ffbe46a3a72ec2d4c4f37,
+    type: 3}
+  wallTriggerPrefab: {fileID: 1679660250057136497, guid: 1f9598772cd611244aee8365aef340b0,
+    type: 3}
+  portalPrefab: {fileID: 7484011785991541111, guid: 2ffa17d8f7376694aa8c46a9b752a447,
+    type: 3}
+  spawnRate: 15
+  deadEndDropChance: 0.75
+  midLevelDropChance: 0.2
+--- !u!61 &6702254219837709767
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010705604187302969}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
